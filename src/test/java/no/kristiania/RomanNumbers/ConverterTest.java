@@ -13,18 +13,18 @@ public class ConverterTest {
     void shouldReturnIIfor2(){
         assertEquals("II", toRoman(2));
     }
-@Test
+    @Test
     void shouldReturnIIIfor3(){
         assertEquals("III", toRoman(3));
     }
-@Test
-    void shouldReturnIVfor4(){
-        assertEquals("IV", toRoman(4));
-    }
-@Test
-    void shouldReturnVfor4(){
-        assertEquals("V", toRoman(5));
-    }
+    @Test
+        void shouldReturnIVfor4(){
+            assertEquals("IV", toRoman(4));
+        }
+    @Test
+        void shouldReturnVfor5(){
+            assertEquals("V", toRoman(5));
+        }
 
     private String toRoman(int number) {
         StringBuilder result = new StringBuilder();
@@ -37,13 +37,13 @@ public class ConverterTest {
             number = 0;
         }
 
-        for (int i = 0; i < number; i++){
+        for (int j = 0; j < number; j++){
             result.append("I");
         }
 
         return result.toString();
     }
 
-
-
 }
+
+
